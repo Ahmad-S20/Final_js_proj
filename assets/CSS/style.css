@@ -1,0 +1,561 @@
+
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-fluid{
+    width: 80%;
+}
+
+.first_div{
+    padding-bottom: 130px;
+    padding-top: 20px;
+    background-image: url("./back_ground.jpg") ;
+    background-size: cover;  /* Makes sure the image covers the whole page */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;
+}
+
+.sliderss{
+    display: flex;
+    justify-content:space-between;
+    /*position: relative;*/
+
+   
+}
+
+.sliderss--img{
+    display: none;
+    
+}
+
+
+ .top-search {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 4px solid #020d18;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+ .top-search select,.top-search input {
+    height: 46px;
+    border: none;
+    background-color: #233a50 !important;
+    font-family: 'Nunito', sans-serif;
+    font-size: #abb7c4;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+}
+
+
+.top-search select {
+    padding-left: 20px;
+    padding-right: 40px;
+    /*\border-right: 1px solid #020d18;*/
+   border-right:1px solid #020d18;
+}
+
+
+
+.top-search input{
+    padding:10px;
+    width: 100%;
+}
+
+
+.social-link{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.fa-brands{
+    color: white;
+}
+
+
+#carouselExampleSlidesOnly{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a:hover{
+    color: #3fc460 !important;
+}
+
+/* trailer session **************************************************************/
+
+.selected{
+    background-color: #1c3d5d
+}
+
+.trailer{
+    background-color: #06121e;
+    padding: 70px 0;
+}
+
+
+.head-for-trailer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head-for-trailer h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.head-for-trailer a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.trailer-slider{
+    display: flex;
+   
+}
+
+
+
+.second-slides{   
+    width: 35%;
+    height:100%;
+    padding: 30px 0;
+    background-color: #0b1a2a;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.for-button{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.for-button button{
+    /*display: flex;
+    width: 100%;*/
+    background-color: #0b1a2a;  /* Solid background color */
+    color: white;               /* White text color */
+    border: none;               /* No border */        /* Padding around the text */
+    text-align: center;         /* Center the text */
+    text-decoration: none;      /* No underline */
+    display: inline-block;      /* Align as inline block */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+
+}
+
+.for-button button:hover{
+    color: #3fc460;
+}
+
+.second-slides img{
+    width: 100px;
+    height: 76px;
+}
+.trailer-img{
+    width: 100%;
+    gap:16px;
+    padding: 10px 15px;
+}
+
+.each-img{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.trailer-img h4{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: none;
+    margin-bottom: 0;
+}
+
+.trailer-img p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ACtor info session ***********************************************************/
+.before-footer{
+    padding: 70px 0;
+    background-color: #020d18;
+}
+
+.before-footer span{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 70%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.Fcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ads-2 {
+    width: 100%;
+}
+
+.container2{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 30%;
+    margin-left: 0;
+
+}
+
+.container2 h4{
+    margin-top: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #405266;
+}
+
+.container h2{font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.photo_pa{
+    display:flex;
+    /*flex-wrap: wrap;*/
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.photo{
+    width: 20%;
+}
+
+.info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+    line-height: 24px !important;
+}
+
+@media screen and (max-width: 1050px)
+{
+    .photo_pa{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.for-this-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.for-this-section h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.for-this-section a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.info a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #4280bf;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.more-info{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.about{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+}
+.about a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #4280bf;
+    font-weight: bold;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+
+/*footer ********************************************************************* */
+
+
+
+
+
+.footer{
+   
+   background-image: url("./back_ground.jpg");
+    color: #FFFFFF;
+    padding:50px 0px;
+}
+.footer a{
+    color: #F4F4F4;
+}
+.footer p{
+    font-weight: 200;
+}
+
+
+.footer .icons img{
+    width: 15px;
+    padding: 2px;
+    border: solid white 1px;
+}
+.footer .in{
+   height: 15px;
+}
+.footer .twitter
+{
+  height: 15px;
+}
+
+
+.start{
+    width:17%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
+}
+.end{
+    flex-grow: 1;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.end nav a,.start p,.end p{
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: regular;
+    text-transform: none;
+}
+
+.end p{
+    width: 190px;
+}
+
+.end nav a:hover{
+    color: #3fc460;
+}
+
+.end h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+
+.footer-itmes{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-itmes nav{
+    font-weight: 200;
+    gap: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+/*.end form input{
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+    background-color: #020d18;
+    border-color: #405266;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: url('../images/uploads/search-bg.png') no-repeat right 20px center;
+}*/
+
+
+.end a{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #dd003f;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1100px)
+{
+    .footer .row{
+        gap: 10px;
+    }
+    .start{
+      /*  text-align: center;*/
+       flex-direction: column;
+       align-items: center;
+        width: 100%;
+    }
+    .start p{
+        width: 607px;
+    }
+    .end{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 694px)
+{
+    .start p{
+        width: 407px;
+    }
+    .end{
+       gap: 10px   ;
+    }
+}
+
+@media screen and (max-width: 484px)
+{
+    .start p{
+        width: 207px;
+    }
+}
+
+@media screen and (max-width: 395px)
+{
+    .footer-itmes{
+    width: 100%;
+    align-items: center;
+   }
+}
+
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 70px; /* Add space for the icon */
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    color: #abb7c4;
+    font-weight: 300;
+    text-transform: none;
+    background-color: #020d18;
+    border-color: #405266;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures the icon doesn’t block input clicks */
+  }
+  
+  .input-container .icon img {
+    width: 15px;
+    height: 15px;
+  }
+  
