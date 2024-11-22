@@ -13,7 +13,7 @@
 }
 
 .first_div{
-    padding-bottom: 130px;
+    padding-bottom: 80px;
     padding-top: 20px;
     background-image: url("./back_ground.jpg") ;
     background-size: cover;  /* Makes sure the image covers the whole page */
@@ -21,10 +21,10 @@
     background-repeat: no-repeat;
 }
 
-.sliderss{
+/*.sliderss{
     display: flex;
     justify-content:space-between;
-    /*position: relative;*/
+    /*position: relative;
 
    
 }
@@ -32,7 +32,301 @@
 .sliderss--img{
     display: none;
     
+}*/
+
+.slider-container {
+    width: 100%; /* Container width */
+    /*height: 600px; /* Set height of the container */
+    overflow: hidden; /* Hide overflowing images */
+    position: relative; /* Positioning for better control */
+    margin-bottom: 40px;
+  }
+  
+  .slider-row {
+    display: flex;
+    gap: 25px;
+    transition: transform 1s ease-in-out; /* Smooth sliding effect */
+    width: calc(100% * 2); /* Adjust width to fit all images in a sliding row */
+  }
+  
+  .slider-img {
+    width: calc((100% - 25px) / 8); /* Divide width equally among 8 images */
+    object-fit: cover; /* Keep aspect ratio while fitting */
+  }
+
+  .slider-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .slider-btn,.slider-btn-links {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: white; /* Default color */
+    margin: 0 5px;  
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-btn.active,.slider-btn-links.active {
+    background-color: #c4ff00; /* Highlight color for active button */
+  }
+  .slider-btn:hover,.slider-btn-links:hover{
+    background-color: #c4ff00;
+  }
+  
+
+.Help a,.log-in a{
+    color: white;
+    text-decoration: none;
 }
+.Help,.log-in{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/**start modal ********/
+.my-modal,.my-modal-sign{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.my-modal .FOR-LOGIN,.my-modal-sign .for-sign-up{
+    background-color: white;
+    padding: 250px 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0,0,0.3);
+    position: relative;
+}
+.my-modal .for-sign-up{
+    padding: 270px 150px;
+}
+.FOR-LOGIN h2,.for-sign-up h2{
+    font-size: 20px;
+    font-weight: 1000;
+    position:absolute;
+    top:10px;
+    left:118px;
+}
+.FOR-LOGIN p,.for-sign-up .username{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 80px;
+    left: 40px
+}
+
+.re-type{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 340px;
+    left: 40px;
+}
+.re-password{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 370px;
+    left: 40px;
+}
+
+.FOR-LOGIN .hamodi,.for-sign-up .hamodi{
+   width: 215px;
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+
+
+.FOR-LOGIN .span,.for-sign-up .Email{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 180px;
+    left: 40px;
+}
+
+.soso,.for-email{
+    width: 215px;
+    position: absolute;
+    top: 210px;
+    left: 40px;
+}
+.password-p{
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 270px;
+    left: 40px;
+}
+.password{
+    width: 215px;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+
+.samer{
+    position: absolute;
+    top: 260px;
+    left: 40px;
+    border: 1px solid #e1e1e1;
+    width: 20px;
+    height: 20px;    
+}
+
+.Remember{
+    position: absolute;
+    top: 257px;
+    left: 70px;
+}
+
+.FOR-LOGIN button{
+    /*width: 150px;
+    height: 50px;*/
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 90px;
+    position: absolute;
+    top: 310px;
+    left: 40px;
+}
+
+.for-sign-up button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 90px;
+    position: absolute;
+    top: 430px;
+    left: 35px;
+}
+
+#signupBtn{
+    color: white;
+    text-decoration: none; 
+    background-color: #dd003f;
+    padding: 11px 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+   
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+
+.close-btn,.close-button{
+    position: absolute;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.close-btn, .close-button{
+    top: 10px;
+    right: 20px;
+}
+
+.FOR-LOGIN .facebook{
+    background-color: #3a5a9a;
+    position: absolute;
+    top: 390px;
+    left: 30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.FOR-LOGIN .instagram{
+    background-color: #00b9ef;
+    position: absolute;
+    top: 390px;
+    left: 160px;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+
+d-none{
+    display: none;
+}
+
+/*.my-modal{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.my-modal .img{
+    background-color: wheat;
+    padding: 40px 40px; 
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0,0,0.3);
+    position: relative;
+}
+
+.my-modal img{
+    width: 450px;
+}
+
+.close-btn,.right-btn,.left-btn{
+    position: absolute;
+    font-size: 20px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.close-btn{
+    top: 10px;
+    right: 20px;
+}
+
+.left-btn{
+    left: 10px;
+    top: 50%;
+}
+
+.right-btn{
+    right: 10px;
+    top: 50%;
+}
+
+.d-non{
+    display: none;
+}
+*/
+
 
 
  .top-search {
@@ -96,6 +390,149 @@
 a:hover{
     color: #3fc460 !important;
 }
+
+/*second section *******************************************************************************/
+
+.row-2{
+    display: flex;
+    gap: 100px;
+}
+
+.container-right{
+    width: 33%;
+}
+.container-right img{
+    width: 80%;
+}
+
+.theater{
+    padding: 70px 0;
+    background-color: #020d18;
+}
+
+
+.container-left{
+    width: 76.66666667%;
+}
+
+.tab-links li{
+    list-style: none;
+}
+
+.title-hd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.title-hd h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.title-hd a,.tabs a,.right a,.see-all{
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.for-linking{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    gap:10px
+}
+
+.movie-list {
+   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+
+.movie-item {
+    margin-top: 20px;
+    width: 170px;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.movie-item img{
+    width: 100%;
+    height: 100%
+}
+.active{
+    color: #dcf836;
+}
+
+.right h4{
+    margin-top: 50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #405266;
+}
+.celeb{
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.celeb-img{
+    width: 30%;
+}
+.celeb-author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.celeb-author a{
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.celeb-author span{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #abb7c4;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
 
 /* trailer session **************************************************************/
 
@@ -179,11 +616,31 @@ a:hover{
     width: 100px;
     height: 76px;
 }
+
+
 .trailer-img{
     width: 100%;
     gap:16px;
     padding: 10px 15px;
+    position: relative;
 }
+
+.container-slider-y{
+    width: 100%; /* Container width */
+    height: 370px; /* Set height of the container */
+    overflow: hidden; /* Hide overflowing images */
+    position: relative; /* Positioning for better control */
+    margin-bottom: 10px;
+}
+.row-y-slider{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding */
+    transform: translateY(0); /* Default position */ /* Smooth sliding effect */
+    /*width: calc(100% * 2); /* Adjust width to fit all images in a sliding row */
+}
+  
 
 .each-img{
     display: flex;
@@ -191,7 +648,12 @@ a:hover{
     margin-bottom: 16px;
 }
 
-.trailer-img h4{
+.each-img img { 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.trailer-info h4{
     font-family: 'Dosis', sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -200,12 +662,16 @@ a:hover{
     margin-bottom: 0;
 }
 
-.trailer-img p{
+.trailer-info p{
     font-family: 'Dosis', sans-serif;
     font-size: 12px;
     color: #abb7c4;
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.selected{
+    background-color: #1c3d5d;
 }
 
 
